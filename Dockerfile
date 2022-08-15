@@ -1,8 +1,8 @@
 FROM golang:1.19-alpine3.16 as builder
 RUN apk add git --no-cache
 
-RUN go install github.com/fgeller/kt@latest
-RUN go install github.com/fgeller/jsonify@latest
+RUN go install github.com/fgeller/kt@master
+RUN go install github.com/fgeller/jsonify@master
 
 
 FROM alpine:3.16
